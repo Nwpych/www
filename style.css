@@ -1,0 +1,154 @@
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Sidebar scrollbar styling (optional, for a more refined look) */
+#sidebar::-webkit-scrollbar {
+    width: 6px;
+}
+#sidebar::-webkit-scrollbar-track {
+    background: transparent;
+}
+#sidebar::-webkit-scrollbar-thumb {
+    background-color: #cbd5e1; /* slate-300 */
+    border-radius: 3px;
+}
+#sidebar::-webkit-scrollbar-thumb:hover {
+    background-color: #94a3b8; /* slate-400 */
+}
+
+/* Main content scrollbar styling (optional) */
+#main-content::-webkit-scrollbar {
+    width: 8px;
+}
+#main-content::-webkit-scrollbar-track {
+    background: transparent; /* bg-white */
+}
+#main-content::-webkit-scrollbar-thumb {
+    background-color: #e2e8f0; /* slate-200 */
+    border-radius: 4px;
+    border: 2px solid #fff; /* bg-white, creates padding effect */
+}
+#main-content::-webkit-scrollbar-thumb:hover {
+    background-color: #cbd5e1; /* slate-300 */
+}
+
+
+/* Styling for Markdown content */
+.prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
+    color: #1e293b; /* slate-800 */
+    font-weight: 600; /* semibold */
+    margin-bottom: 0.8em;
+    margin-top: 1.5em;
+}
+.prose h1 {
+    font-size: 2.25rem; /* text-4xl */
+    line-height: 2.5rem;
+    border-bottom: 2px solid #0d9488; /* teal-600 */
+    padding-bottom: 0.3em;
+    margin-bottom: 1em;
+}
+.prose h2 {
+    font-size: 1.875rem; /* text-3xl */
+    line-height: 2.25rem;
+    border-bottom: 1px solid #94a3b8; /* slate-400 */
+    padding-bottom: 0.2em;
+}
+.prose h3 {
+    font-size: 1.5rem; /* text-2xl */
+    line-height: 2rem;
+}
+.prose h4 {
+    font-size: 1.25rem; /* text-xl */
+    line-height: 1.75rem;
+}
+
+.prose p, .prose ul, .prose ol, .prose blockquote {
+    color: #334155; /* slate-700 */
+    line-height: 1.75;
+    margin-bottom: 1.25em;
+}
+
+.prose ul, .prose ol {
+    padding-left: 1.5em;
+}
+.prose ul li::marker {
+    color: #0d9488; /* teal-600 */
+}
+.prose ol li::marker {
+    color: #0d9488; /* teal-600 */
+    font-weight: 600;
+}
+
+
+.prose a {
+    color: #0f766e; /* teal-700 */
+    text-decoration: none;
+    font-weight: 500;
+}
+.prose a:hover {
+    color: #047857; /* emerald-700 */
+    text-decoration: underline;
+}
+
+.prose strong {
+    color: #0f172a; /* slate-900 */
+    font-weight: 600;
+}
+
+.prose blockquote {
+    border-left: 4px solid #0d9488; /* teal-600 */
+    padding-left: 1em;
+    font-style: italic;
+    color: #475569; /* slate-600 */
+}
+
+.prose img {
+    border-radius: 0.5rem; /* rounded-lg */
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1); /* shadow-md */
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.prose code {
+    background-color: #f1f5f9; /* slate-100 */
+    color: #4338ca; /* indigo-700 */
+    padding: 0.2em 0.4em;
+    border-radius: 0.25rem; /* rounded */
+    font-size: 0.9em;
+}
+.prose pre {
+    background-color: #0f172a; /* slate-900 */
+    color: #e2e8f0; /* slate-200 */
+    padding: 1em;
+    border-radius: 0.5rem; /* rounded-lg */
+    overflow-x: auto;
+}
+.prose pre code {
+    background-color: transparent;
+    color: inherit;
+    padding: 0;
+    border-radius: 0;
+    font-size: inherit;
+}
+
+/* Custom active nav link style if needed beyond JS class toggle */
+#sidebar nav a.active-nav-link, #mobile-nav nav a.active-nav-link {
+    background-color: #0d9488; /* teal-600 */
+    color: white;
+}
+#sidebar nav a.active-nav-link:hover, #mobile-nav nav a.active-nav-link:hover {
+    background-color: #0f766e; /* teal-700 */
+}
+
+/* Specific styling for checklist items if markdown includes them as task lists */
+.prose input[type="checkbox"] {
+    margin-right: 0.5em;
+    color: #0d9488; /* teal-600 */
+    border-radius: 0.25rem;
+}
+.prose input[type="checkbox"]:focus {
+    ring: #0d9488;
+}
+
